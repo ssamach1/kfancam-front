@@ -33,7 +33,7 @@ import {
 import DropdownCheckboxes from "../../components/CheckBoxes/DropdownCheckboxes/DropdownCheckboxes";
 import { Search } from "../../components/Search/Search";
 
-const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 function getSortingValues(language) {
   if (language === `en-US`)

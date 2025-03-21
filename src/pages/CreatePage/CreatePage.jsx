@@ -19,7 +19,7 @@ import {
 } from "./styled";
 import CheckBox from "../../components/CheckBoxes/BasicCheckBoxes/CheckBox/CheckBox";
 
-const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const CreatePage = () => {
   const [signIn, setSignIn] = useState(() => {

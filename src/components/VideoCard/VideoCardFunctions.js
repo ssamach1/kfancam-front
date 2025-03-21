@@ -245,7 +245,8 @@ export function formatVideoUploadDateEN(publishedAt) {
 export async function deleteVideo(e, youtubeUrl) {
   e.stopPropagation();
 
-  const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+  const BACKEND_URL =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
   const isConfirmed = window.confirm(`Delete ${youtubeUrl}?`);
   if (isConfirmed) {
     try {

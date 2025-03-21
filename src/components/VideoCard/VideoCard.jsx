@@ -50,7 +50,7 @@ import {
   viewLikeRatioPainter,
 } from "./VideoCardFunctions";
 
-const BACKEND_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const VideoCard = ({ ...props }) => {
   const observedTumbnail = useRef();
