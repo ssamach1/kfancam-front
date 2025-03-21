@@ -1,0 +1,19 @@
+.dropdown {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.dropdownTitle {
+  margin-right: 10px;
+}
+
+.dropdownArrow {
+  margin-top: 3px;
+  width: 12px;
+  transition: 0.25s;
+}
+
+.active {
+  transform: rotateX(180deg);
+}

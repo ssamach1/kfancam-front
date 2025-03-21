@@ -1,0 +1,120 @@
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.aespa {
+  --border-color: linear-gradient(to right, #d8c0f1, #a79dee);
+}
+.babymonster {
+  --border-color: linear-gradient(to right, #ed989d, #c42b34);
+}
+.fromis_9 {
+  --border-color: linear-gradient(to right, #ded4ea, #db807a);
+}
+.gidle {
+  --border-color: linear-gradient(to right, #f78abe, #d6004b);
+}
+.illit {
+  --border-color: #c6a2e1;
+}
+.itzy {
+  --border-color: linear-gradient(to right, #e8b0ff, #f07bff);
+}
+.ive {
+  --border-color: linear-gradient(to right, #afcef9, #ac9fe6);
+}
+.kepler {
+  --border-color: #c73b32;
+}
+.kissoflife {
+  --border-color: linear-gradient(to right, #eea5b0, #ff0829);
+}
+.lesserafim {
+  --border-color: linear-gradient(to right, #92a7e7, #5e84c1);
+}
+.newjeans {
+  --border-color: #d3d7e7;
+}
+.nmixx {
+  --border-color: #bfe0fc;
+}
+.stayc {
+  --border-color: linear-gradient(to right, #e9d9f1, #de84ac);
+}

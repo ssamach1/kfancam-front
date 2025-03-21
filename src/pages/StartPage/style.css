@@ -1,0 +1,51 @@
+.firstAccordion {
+  @media (max-width: 930px) {
+    top: 25% !important;
+    left: -20% !important;
+  }
+  @media (max-width: 600px) {
+    top: 15% !important;
+    left: 15% !important;
+  }
+}
+
+.secondAccordion {
+  @media (max-width: 930px) {
+    left: -25% !important;
+  }
+  @media (max-width: 600px) {
+    left: 0% !important;
+  }
+}
+
+.thirdAccordion {
+  @media (max-width: 930px) {
+    left: -25% !important;
+  }
+  @media (max-width: 600px) {
+    left: -5% !important;
+    top: 30% !important;
+  }
+}
+
+@media (max-width: 1156px) {
+  .first {
+    margin-left: -9vh !important;
+  }
+  .second {
+    margin-left: -9vh !important;
+  }
+
+  .third {
+    margin-left: -7vh !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tooltip {
+    width: auto !important;
+  }
+  .small {
+    margin-left: -9vh !important;
+  }
+}
