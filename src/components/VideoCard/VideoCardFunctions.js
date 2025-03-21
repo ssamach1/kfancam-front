@@ -71,7 +71,8 @@ export function viewLikeRatioPainter(viewLikeRatio, siteTags, songsCount) {
     !siteTags.includes(`official`) ||
     !siteTags.includes(`fancam`) ||
     siteTags.includes("facecam") ||
-    songsCount > 1
+    songsCount > 1 ||
+    songsCount === undefined
   )
     return `black`;
   if (viewLikeRatio > 35) {
