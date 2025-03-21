@@ -119,7 +119,7 @@ const VideoCard = ({ ...props }) => {
             props.siteTags.includes(`mostViewedSong`) ||
             props.siteTags.includes(`mostViewedIdolSong`) ||
             props.siteTags.includes(`mostViewedPerfomance`)) &&
-          (props.songsCount === 1 || songsCount === undefined) ? (
+          (props.songsCount === 1 || props.songsCount === undefined) ? (
           <>
             <TagWrapper>
               {props.siteTags.includes(SITE_TAGS_ARRAY_0[0]) ? (
@@ -225,7 +225,7 @@ const VideoCard = ({ ...props }) => {
                 color: viewLikeRatioPainter(
                   props.viewLikeRatio,
                   props.siteTags,
-                  props.songsCount || songsCount === undefined
+                  props.songsCount || props.songsCount === undefined
                 ),
               }}
             >
@@ -241,7 +241,7 @@ const VideoCard = ({ ...props }) => {
         <CardDescStat>
           {props.averageIdolSongRatio > 1 &&
           officialSimpleFancamCheck(props.siteTags) &&
-          (props.songsCount === 1 || songsCount === undefined) ? (
+          (props.songsCount === 1 || props.songsCount === undefined) ? (
             <Tooltip>
               <TooltipContent
                 $padding={`10px`}
@@ -263,7 +263,7 @@ const VideoCard = ({ ...props }) => {
               </div>
             </Tooltip>
           ) : officialSimpleFancamCheck(props.siteTags) &&
-            (props.songsCount === 1 || songsCount === undefined) ? (
+            (props.songsCount === 1 || props.songsCount === undefined) ? (
             <Tooltip>
               <TooltipContent
                 $padding={`10px`}
@@ -289,7 +289,7 @@ const VideoCard = ({ ...props }) => {
           )}
           {props.averagePerfomanceRatio > 1 &&
           officialSimpleFancamCheck(props.siteTags) &&
-          (props.songsCount === 1 || songsCount === undefined) ? (
+          (props.songsCount === 1 || props.songsCount === undefined) ? (
             <Tooltip>
               <TooltipContent
                 $padding={`10px`}
@@ -311,7 +311,7 @@ const VideoCard = ({ ...props }) => {
               </div>
             </Tooltip>
           ) : officialSimpleFancamCheck(props.siteTags) &&
-            (props.songsCount === 1 || songsCount === undefined) ? (
+            (props.songsCount === 1 || props.songsCount === undefined) ? (
             <Tooltip>
               <TooltipContent
                 $padding={`10px`}
